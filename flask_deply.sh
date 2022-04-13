@@ -1,5 +1,6 @@
 
 # The following is a Shell script to deploy and publish a Flask into a Docker container.
+# In order for this to work, Docker has be to installed and the account that you are using for ssh has be to be part of the docker group prior of running the script. 
 # Author: omrsangx
 
 #!/bin/bash
@@ -26,7 +27,6 @@ elif [[ -z $REMOTE_USER && -z $REMOTE_HOST ]] ; then
     echo "Code ran unsuccessful"
     echo "Usage: flaskDepl.sh [remote_user] [remote_host] [container_port 9000 to 9999] [pwd] [Flask app files]"
     echo "Enter flaskDepl.sh -h or flaskDepl.sh --help for more info"
-    # ./z_docker_flask.sh centos 192.168.5.200 9337 file 
     exit 1
 
 elif [[ ! $CONTAINER_PORT =~ ^[0-9]+$ ]] || [[ $CONTAINER_PORT -lt 9000 || $CONTAINER_PORT -gt 9999 ]] ; then
