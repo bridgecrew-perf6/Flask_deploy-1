@@ -6,10 +6,10 @@
 
 # Demo run:
 
-# [flask_dp@client-pc dev_dir]$ /smb/PRJ_PROJECTS/Flask_Deploy/flaskdeploy_final_for_sleep_project-for_github.sh centos 192.168.5.200 9904 flask_sv_word_db_app_version_4.py
+# [flask_dp@client-pc dev_dir]$ flaskdeploy.sh remote_user 192.168.5.200 9904 Flask_app.py
 # Starting deployment
-# Directory being copied........./smb/A_python_dev_jupyter/sv_word_app_pro/dev_dir/*
-# File being copied............../smb/A_python_dev_jupyter/sv_word_app_pro/dev_dir/flask_sv_word_db_app_version_4.py
+# Directory being copied........./dev_dir/*
+# File being copied............../Flask_app.py
 # Press enter to continue........
 
 # -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
